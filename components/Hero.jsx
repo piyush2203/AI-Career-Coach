@@ -47,6 +47,7 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
+          {/* update the youtube link later with the uploaded video link */}
           <Link href="https://www.youtube.com/@pg_piyush/videos"  target="_blank">
             <Button size="lg" variant="outline" className="px-8">
               Watch Demo
