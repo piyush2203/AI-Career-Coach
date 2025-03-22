@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { revalidatePath } from "next/cache";
 
 const HeroSection = () => {
   const imageRef = useRef(null);
@@ -41,12 +42,12 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex justify-center space-x-4">
-          <Link href="/dashboard">
-            <Button size="lg" className="px-8">
+          <Link href="/interview">
+            <Button  size="lg" className="px-8 cursor-pointer">
               Get Started
             </Button>
           </Link>
-          <Link href="https://www.youtube.com">
+          <Link href="https://www.youtube.com/@pg_piyush/videos"  target="_blank">
             <Button size="lg" variant="outline" className="px-8">
               Watch Demo
             </Button>
