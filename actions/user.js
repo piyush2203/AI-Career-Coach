@@ -2,7 +2,7 @@
 
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
-import { generativeAIInsights } from "./dashboard";
+import { generateAIInsights } from "./dashboard";
 
 
 export async function updateUser(data){
@@ -30,7 +30,7 @@ export async function updateUser(data){
           
                   // If industry doesn't exist, create it with default values
                   if (!industryInsight) {
-                    const insights = await generativeAIInsights(data.industry);
+                    const insights = await generateAIInsights(data.industry);
           
                     industryInsight = await db.industryInsight.create({
                       data: {
@@ -47,7 +47,7 @@ export async function updateUser(data){
                         id:user.id,
                     },
                     data:{
-                        industry: data.industry,
+                        industry: data.industry ,
                         experience:data.experience,
                         bio:data.bio,
                         skills:data.skills,
