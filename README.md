@@ -8,13 +8,13 @@
 <ul>
   <li>NextJs</li>
   <li>ReactJs</li>
-  <li>ShadCn UI</li>
-  <li>Clerk Authentication</li>
   <li>Gemini-Flash-1.5-API</li>
   <li>NeonDB</li>
   <li>Prisma ORM</li>
   <li>Inngest</li>
+  <li>Clerk Authentication</li>
   <li>Zod Validation</li>
+  <li>ShadCn UI</li>
   <li>Rechart</li>
   <li>Vercel</li>
 </ul>
